@@ -1,29 +1,42 @@
 
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
     color: #333;
 }
 
-header, footer {
+
+header {
     background-color: #333;
     color: #fff;
+    padding: 1rem;
     text-align: center;
-    padding: 1rem 0;
 }
 
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: #555;
+    padding: 0.5rem;
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 10px;
+    margin: 0 1rem;
 }
 
 nav ul li a {
@@ -31,57 +44,43 @@ nav ul li a {
     text-decoration: none;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
 
 main {
-    padding: 20px;
+    padding: 2rem;
 }
 
-/* Section Styles */
-section {
-    margin-bottom: 30px;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+form {
+    margin-bottom: 2rem;
 }
 
-section h2 {
-    color: #333;
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-section p {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.5;
-}
-
-/* Form Styles */
 form label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
 form input[type="text"],
 form input[type="email"],
-form input[type="number"],
 form textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
     border: 1px solid #ccc;
-    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
 form button {
-    padding: 10px 20px;
-    background-color: #007bff;
+    padding: 0.5rem 1rem;
+    background-color: #333;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -89,19 +88,18 @@ form button {
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background-color: #555;
 }
 
-/* Footer Styles */
-footer p {
-    margin: 0;
-    font-size: 14px;
+
+#assessmentResult {
+    display: none;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #333;
+    color: #fff;
 }
