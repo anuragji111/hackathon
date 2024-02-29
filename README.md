@@ -21,3 +21,20 @@ Integration with existing health care systems for efficient data management.
 FLOW CHART :-
 
 <img width="1585" alt="Untitled" src="https://github.com/Anuragji1/hackathon/assets/140825596/a6180007-2cb6-42e2-8359-7f9ce4614b4c">
+
+--Key Features:
+User-friendly interface for seamless navigation.
+Secure storage of personal information and screening responses.
+Automated assessment of mental health status based on screening questions.
+Immediate guidance and support based on assessment results.
+Integration with existing health care systems for efficient data management.
+
+--Technologies Used:
+html, css, javascript web app development.
+Node.js for backend server development.
+MongoDB for database management.
+Authentication and data encryption for ensuring user privacy and security.
+
+--Team Members:
+1) Kumar Akash
+2) Anurag kumar Jha
