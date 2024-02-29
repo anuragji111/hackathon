@@ -19,6 +19,10 @@ Integration with existing health care systems for efficient data management.
 
 ----------------------------------------------------------------------------------------------
 FLOW CHART :-
+
+<img width="1585" alt="Untitled" src="https://github.com/Anuragji1/hackathon/assets/140825596/a6180007-2cb6-42e2-8359-7f9ce4614b4c">
+https://www.figma.com/file/hIPRttkIFpmMnbJqqlpYEy/Untitled?type=whiteboard&node-id=603-139&t=gSS4aEAHG9DbmiIf-4
+
 User
 
 Welcoming the customers
@@ -41,6 +45,9 @@ Resources
 
 next
 contact support
+
+
+
 Key
 
 Action
