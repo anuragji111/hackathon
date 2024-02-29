@@ -20,7 +20,7 @@ Integration with existing health care systems for efficient data management.
 ----------------------------------------------------------------------------------------------
 FLOW CHART :-
 
-<img width="279" alt="Untitled (1)" src="https://github.com/Anuragji1/hackathon/assets/140825596/9bbcd12f-0132-46a8-ac13-b22765b5f68d">
+<img width="1585" alt="Untitled (2)" src="https://github.com/Anuragji1/hackathon/assets/140825596/f1d88e2d-dbe3-43f6-8d02-0ed10b6ee0b3">
 
 
 --Key Features:
