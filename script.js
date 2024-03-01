@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
     assessmentForm.addEventListener('submit', function(event) {
         event.preventDefault(); 
 
-        // Calculate average score
+        
         const questions = ['question1', 'question2', 'question3', 'question4', 'question5', 'question6', 'question7', 'question8', 'question9', 'question10'];
         let totalScore = 0;
         questions.forEach(function(question) {
@@ -14,10 +14,13 @@ document.addEventListener('DOMContentLoaded', function() {
         });
         const averageScore = totalScore / questions.length;
 
-       
+        
         assessmentResult.style.display = 'block';
         assessmentResult.innerHTML = `<h2>Assessment Result</h2>
                                        <p>Your average score is ${averageScore.toFixed(2)}, indicating: ${interpretScore(averageScore)}</p>`;
+
+        
+        saveResultToLocalStorage(averageScore);
     });
 });
 
@@ -39,6 +42,7 @@ function getScore(option) {
     }
 }
 
+
 function interpretScore(score) {
     if (score < 1.5) {
         return "You seem to be doing well. Keep up the good work!";
@@ -49,4 +53,11 @@ function interpretScore(score) {
     } else {
         return "It's important to seek professional help. Please reach out to a mental health expert.";
     }
+}
+
+
+function saveResultToLocalStorage(score) {
+    const results = JSON.parse(localStorage.getItem('assessmentResults')) || [];
+    results.push({ date: new Date(), score: score });
+    localStorage.setItem('assessmentResults', JSON.stringify(results));
 }
