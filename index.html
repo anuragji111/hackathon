@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mental Health Screening</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <h1>Mental Health Screening</h1>
@@ -21,8 +23,16 @@
     <main>
         <section id="about">
             <h2>About</h2>
-            <p>Considering the increasing burden of mental disorders, it's crucial to identify individuals at risk early. This web application aims to provide a platform for self-identifying mental health status and accessing guidance for support.</p>
-        </section>
+            <p>Considering the increasing burden of mental disorders, it's crucial to identify individuals at risk early. This web application aims to provide a platform for self-identifying mental health status and accessing guidance for support. Explore the following features:</p>
+            <ul>
+                <li><strong>Self-Assessment:</strong> Take an interactive assessment to evaluate your mental health status based on evidence-based criteria.</li>
+                <li><strong>Personalized Recommendations:</strong> Receive personalized recommendations based on your assessment results to improve your mental well-being.</li>
+                <li><strong>Resource Library:</strong> Access a comprehensive library of resources, including articles, videos, and self-help tools, curated by mental health professionals.</li>
+                <li><strong>Community Support:</strong> Connect with a supportive community of individuals facing similar challenges, share experiences, and offer mutual support.</li>
+            </ul>
+        </section><br/>
+
+        
         <section id="screening">
             <h2>Start Screening</h2>
             <p>Take the assessment to evaluate your mental health status.</p>
@@ -32,7 +42,12 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 <label for="age">Age:</label>
-                <input type="number" id="age" name="age" required>
+                <input type="number" id="age" name="age" required><br/><br/>
+
+                <div class="screening-details">
+                    <h3>What to Expect:</h3>
+                    <p>The screening consists of a series of questions designed to assess various aspects of your mental well-being. Your responses will help identify potential areas of concern and guide you toward appropriate support.</p>
+                </div><br/>
                 <label for="question1">How often do you feel overwhelmed or unable to cope with daily stressors?</label>
                 <select id="question1" name="question1" required>
                     <option value="Never">Never</option>
@@ -40,16 +55,18 @@
                     <option value="Sometimes">Sometimes</option>
                     <option value="Often">Often</option>
                     <option value="Always">Always</option>
-                </select>
-                <label for="question2">Do you often experience changes in your appetite or weight (e.g., significant loss or gain)?</label>
+                </select><br/><br/>
+                <label for="question2">Do you often experience changes in your appetite or weight (e.g., significant
+                    loss or gain)?</label>
                 <select id="question2" name="question2" required>
                     <option value="Never">Never</option>
                     <option value="Rarely">Rarely</option>
                     <option value="Sometimes">Sometimes</option>
                     <option value="Often">Often</option>
                     <option value="Always">Always</option>
-                </select>
-                <label for="question3">How frequently do you have trouble sleeping, either falling asleep or staying asleep?
+                </select> <br/><br/>
+                <label for="question3">How frequently do you have trouble sleeping, either falling asleep or staying
+                    asleep?
                 </label>
                 <select id="question3" name="question3" required>
                     <option value="Never">Never</option>
@@ -57,7 +74,7 @@
                     <option value="Sometimes">Sometimes</option>
                     <option value="Often">Often</option>
                     <option value="Always">Always</option>
-                </select>
+                </select> <br/><br/>
                 <label for="question4">Do you frequently experience mood swings or sudden changes in your emotions?
                 </label>
                 <select id="question4" name="question3" required>
@@ -66,8 +83,9 @@
                     <option value="Sometimes">Sometimes</option>
                     <option value="Often">Often</option>
                     <option value="Always">Always</option>
-                </select>
-                <label for="question5">Have you noticed a persistent lack of interest or pleasure in activities that you once enjoyed?
+                </select> <br/><br/>
+                <label for="question5">Have you noticed a persistent lack of interest or pleasure in activities that you
+                    once enjoyed?
                 </label>
                 <select id="question5" name="question3" required>
                     <option value="Never">Never</option>
@@ -75,7 +93,7 @@
                     <option value="Sometimes">Sometimes</option>
                     <option value="Often">Often</option>
                     <option value="Always">Always</option>
-                </select>
+                </select><br/><br/>
                 <label for="question6">Do you often feel fatigued or lacking in energy, even after adequate rest?
                 </label>
                 <select id="question6" name="question3" required>
@@ -84,7 +102,7 @@
                     <option value="Sometimes">Sometimes</option>
                     <option value="Often">Often</option>
                     <option value="Always">Always</option>
-                </select>
+                </select><br/><br/>
                 <label for="question7">How often do you find it difficult to concentrate or make decisions?
                 </label>
                 <select id="question7" name="question3" required>
@@ -93,7 +111,7 @@
                     <option value="Sometimes">Sometimes</option>
                     <option value="Often">Often</option>
                     <option value="Always">Always</option>
-                </select>
+                </select><br/><br/>
                 <label for="question8">Have you experienced persistent feelings of worthlessness or excessive guilt?
                 </label>
                 <select id="question8" name="question3" required>
@@ -102,8 +120,9 @@
                     <option value="Sometimes">Sometimes</option>
                     <option value="Often">Often</option>
                     <option value="Always">Always</option>
-                </select>
-                <label for="question9">Do you have recurrent thoughts of death or suicide, or have you made suicide attempts?
+                </select><br/><br/>
+                <label for="question9">Do you have recurrent thoughts of death or suicide, or have you made suicide
+                    attempts?
                 </label>
                 <select id="question9" name="question3" required>
                     <option value="Never">Never</option>
@@ -111,8 +130,9 @@
                     <option value="Sometimes">Sometimes</option>
                     <option value="Often">Often</option>
                     <option value="Always">Always</option>
-                </select>
-                <label for="question10">How often do you engage in behaviors that are harmful to yourself or others (e.g., substance abuse, self-harm)?
+                </select><br/><br/>
+                <label for="question10">How often do you engage in behaviors that are harmful to yourself or others
+                    (e.g., substance abuse, self-harm)?
                 </label>
                 <select id="question10" name="question3" required>
                     <option value="Never">Never</option>
@@ -120,27 +140,56 @@
                     <option value="Sometimes">Sometimes</option>
                     <option value="Often">Often</option>
                     <option value="Always">Always</option>
-                </select>
-                
+                </select><br/><br/><br/>
+
                 <button type="submit">Submit</button>
             </form>
-            
+
             <section id="assessmentResult" style="display: none;">
                 <h2>Assessment Result</h2>
                 <p>Your mental health assessment result will be displayed here.</p>
-               
             </section>
+        
+            
         </section>
+        
         <section id="resources">
             <h2>Resources</h2>
             <p>Access resources and support for mental health:</p>
             <ul>
-                <li><a href="https://www.nimh.nih.gov/health/find-help/index.shtml">National Institute of Mental Health</a></li>
-                <li><a href="https://www.who.int/mental_health/en/">World Health Organization - Mental Health</a></li>
-                <li><a href="https://www.psychiatry.org/">American Psychiatric Association</a></li>
-               
-            </ul>
+                <li>
+                    <a href="https://www.nimh.nih.gov/health/find-help/index.shtml" target="_blank">
+                        <img src="https://www.nimh.nih.gov/themes/nimhtheme/logo.png" alt="National Institute of Mental Health"><br/>
+                        National Institute of Mental Health
+                    </a>
+                    <p>The National Institute of Mental Health (NIMH) is the leading federal agency for research on mental disorders. They provide valuable information on various mental health conditions, treatment options, and research initiatives.</p>
+                </li>
+                <li>
+                    <a href="https://www.who.int/mental_health/en/" target="_blank">
+                        <img src="https://cdn.who.int/media/images/default-source/infographics/who-emblem.png?sfvrsn=877bb56a_2" alt="WHO Mental Health Logo" width="100" height="100"><br/>
+                        World Health Organization - Mental Health
+                    </a>
+                    <p>The World Health Organization (WHO) focuses on promoting mental health, preventing mental disorders, and improving treatment access globally. Their website offers resources, reports, and guidelines for mental health professionals and the general public.</p>
+                </li>
+                <li>
+                    <a href="https://www.psychiatry.org/" target="_blank">
+                        <img src="https://www.psychiatry.org/assets/images/logos/c-logo.svg" alt="APA Logo" width="100" height="100"> <br/>
+                        American Psychiatric Association
+                    </a>
+                    <p>The American Psychiatric Association (APA) is a professional organization representing psychiatrists in the United States. They provide resources for both mental health professionals and individuals seeking information about mental health conditions and treatments.</p>
+                </li>
+                <li>
+                    <p>MentalHealth.gov provides resources and information on mental health conditions, treatment options, and how to find help.</p>
+                    <a href="https://www.mentalhealth.gov/" target="_blank">
+                        <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/mental-health-logo-design-template-1cb8bc2ea114233591fc2d620a13047e_screen.jpg?ts=1680927020" alt="Mental Health Logo" width="100" height="100"><br/>
+                    MentalHealth.gov
+                    </a>
+
+                    
+                </li>
+            </ul><br/><br/>
         </section>
+        
         <section id="contact">
             <h2>Contact</h2>
             <p>For inquiries or support, please contact us:</p>
@@ -153,12 +202,37 @@
                 <textarea id="message" name="message" required></textarea>
                 <button type="submit">Send Message</button>
             </form>
+        
+            <div class="contact-details">
+                <h3>Reach Out to Us:</h3>
+                <p>Feel free to get in touch with us for any questions, feedback, or support needs. We are here to help!</p>
+            </div>
+        
+            <div class="contact-options">
+                <h3>Contact Options:</h3>
+                <ul>
+                    <li>
+                        <img src="phone_image.png" alt="Phone Icon" width="50" height="50">
+                        <span>91-112-616-2996</span>
+                    </li>
+                    <li>
+                        <img src="email_icon.png" alt="Email Icon" width="50" height="50">
+                        <span>infoteamservice1@gmail.com</span>
+                    </li>
+                    <li>
+                        <img src="location_icon.png" alt="Location Icon" width="50" height="50">
+                        <span>Jalandhar-Delhi, LPU, G.T. Road, Phagwara, Punjab (INDIA) -144411</span>
+                    </li>
+                </ul>
+            </div>
         </section>
+        
     </main>
     <footer>
         <p>&copy; 2024 Mental Health Screening App</p>
     </footer>
-    
+    <script src="node.js"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
